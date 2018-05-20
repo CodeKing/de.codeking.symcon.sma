@@ -1,0 +1,116 @@
+{
+  "elements": [
+    {
+      "type": "Label",
+      "label": "___ [ Support ] ________________________________________________________________________________________"
+    },
+    {
+      "type": "Label",
+      "label": "If you like this module and want to support further development of my symcon modules, feel free to donate at www.paypal.me/codeking"
+    },
+    {
+      "type": "Label",
+      "label": "www.paypal.me/codeking"
+    },
+    {
+      "type": "Label",
+      "label": "___ [ Module Settiungs ] _______________________________________________________________________________"
+    },
+    {
+      "type": "Select",
+      "name": "device",
+      "caption": "Device",
+      "options": [
+        {
+          "label": "Default",
+          "value": "default"
+        },
+        {
+          "label": "Sunny Boy",
+          "value": "sunnyboy"
+        }
+      ]
+    },
+    {
+      "name": "ip",
+      "type": "ValidationTextBox",
+      "caption": "IP Address"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "port",
+      "caption": "TCP Port"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "unit_id",
+      "caption": "Unit ID"
+    },
+    {
+      "type": "Label",
+      "label": "Interval, when all values will updating."
+    },
+    {
+      "type": "IntervalBox",
+      "name": "interval",
+      "caption": "Seconds"
+    },
+    {
+      "type": "Label",
+      "label": "Interval, when current values will updating."
+    },
+    {
+      "type": "IntervalBox",
+      "name": "interval_current",
+      "caption": "Seconds"
+    },
+    {
+      "type": "CheckBox",
+      "name": "daytime",
+      "caption": "Update values on daytime only"
+    },
+    {
+      "type": "Label",
+      "label": "___ [ Logging ] ________________________________________________________________________________________"
+    },
+    {
+      "type": "CheckBox",
+      "name": "log",
+      "caption": "enable logging"
+    }
+  ],
+  "status": [
+    {
+      "code": 101,
+      "icon": "inactive",
+      "caption": "Please enter the ip address and the tcp port of your SMA device."
+    },
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Connection has been established."
+    },
+    {
+      "code": 201,
+      "icon": "error",
+      "caption": "Error: Please enter the ip address and the tcp port of your SMA device."
+    },
+    {
+      "code": 202,
+      "icon": "error",
+      "caption": "Error: Could not read data from your SMA device."
+    }
+  ],
+  "actions": [
+    {
+      "type": "Button",
+      "label": "Read Device",
+      "onClick": "SMAModbus_UpdateDevice($id, true);"
+    },
+    {
+      "type": "Button",
+      "label": "Update Values",
+      "onClick": "SMAModbus_UpdateValues($id, true);"
+    }
+  ]
+}

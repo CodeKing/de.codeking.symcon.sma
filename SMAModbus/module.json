@@ -1,0 +1,13 @@
+{
+  "id": "{D635007F-C977-414F-B241-AA09DC3669B0}",
+  "name": "SMA ModBus",
+  "type": 3,
+  "vendor": "SMA",
+  "aliases": [
+    "SMA ModBus"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "SMAModbus"
+}
