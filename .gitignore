@@ -1,2 +1,3 @@
-.idealibs/helpers/.gitignore
+.idea
+libs/helpers/.gitignore
 libs/helpers/.github
